@@ -1,0 +1,12 @@
+services:
+  bot:
+    # ... your existing bot config ...
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.library
+    container_name: hard-library
+    ports:
+      - "8080:80" # This maps your server's port 8080 to the app
+    restart: always
