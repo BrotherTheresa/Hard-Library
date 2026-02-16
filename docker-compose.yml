@@ -2,7 +2,7 @@ services:
   library:
     build:
       context: .
-      dockerfile: Dockerfile.library
+      dockerfile: Dockerfile
     container_name: hard-library
     ports:
       - "8080:80"
